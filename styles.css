@@ -157,3 +157,105 @@ footer {
   text-align: center;
   padding: 2rem 0;
 }
+
+/* 📱 Mobile + Tablet Responsiveness */
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-ghosts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ghost {
+    width: 60px;
+    margin: 0.5rem;
+  }
+
+  #how-it-works ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .ghost-bios {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .ghost-bio {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 👻 Ghost Bio Section */
+.ghost-bios {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background-color: #0d0d0d;
+  flex-wrap: wrap;
+}
+
+.ghost-bio {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  box-shadow: 0 0 20px rgba(176, 132, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ghost-bio:hover {
+  transform: translateY(-5px);
+}
+
+.ghost-bio h3 {
+  color: #b084ff;
+  margin-bottom: 0.5rem;
+}
+
+.ghost-bio p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* 🛠 Fix Send Button Alignment */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+  margin: 0.5rem 0;
+  width: 300px;
+  max-width: 90%;
+}
+
+/* 🧼 Smooth SVG scaling if they're missing/acting up */
+.hero-ghosts img {
+  object-fit: contain;
+  max-width: 100%;
+}

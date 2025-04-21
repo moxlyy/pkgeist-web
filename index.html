@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pkgeist 👻</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#ghosts">Ghost Crew</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pkgeist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>pkgeist 👻</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#ghosts">Ghosts</a>
+      <a href="#bios">Bios</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-text">
-        <h1>Welcome to pkgeist 👻</h1>
-        <p class="tagline">A spooky, smart, and silly package manager</p>
-        <a href="#features" class="cta-button">Explore Features</a>
-      </div>
-      <div class="hero-ghosts">
-        <img src="assets/1.svg" alt="ghost 1" class="ghost">
-        <img src="assets/2.svg" alt="ghost 2" class="ghost">
-        <img src="assets/3.svg" alt="ghost 3" class="ghost">
-        <img src="assets/4.svg" alt="ghost 4" class="ghost">
-      </div>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>pkgeist is a spooky CLI package manager with a hauntingly good UX.</p>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-      <h2>🌀 What is pkgeist?</h2>
-      <p>pkgeist is like if <a href="https://brew.sh/">Homebrew</a> and 
-      <a href="https://wiki.archlinux.org/title/Pacman">Pacman</a> got possessed by a sarcastic AI ghost.</p>
-      <ul>
-        <li>💀 Beautiful CLI: <code>geist install spooky-package</code></li>
-        <li>🧠 AI-assisted search & resolution</li>
-        <li>🌐 User-made taps (ghost towns full of packages!)</li>
-        <li>🦀 Rust where it counts, Python where it's friendly</li>
-      </ul>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works">
-      <h2>🎃 How pkgeist Works</h2>
-      <p>Discover how pkgeist makes package management fun and spooky!</p>
-      <ul>
-        <li>1. Use <code>geist tap</code> to add your ghost town</li>
-        <li>2. Search with <code>geist search</code> for that perfect package</li>
-        <li>3. Install with <code>geist install</code> and get spooky packages</li>
-      </ul>
-    </section>
-
-    <!-- Ghost Crew Section -->
     <section id="ghosts">
-      <h2>👻 Meet the Geist Crew</h2>
-      <div class="ghost-lineup">
-        <img src="assets/1.svg" alt="ghost 1" />
-        <img src="assets/2.svg" alt="ghost 2" />
-        <img src="assets/3.svg" alt="ghost 3" />
-        <img src="assets/4.svg" alt="ghost 4" />
+      <h2>Meet the Ghosts 👻</h2>
+      <div class="ghosts">
+        <div class="ghost">
+          <img src="assets/1.svg" alt="Wisp" />
+          <h3>Wisp – the energetic greeter 👋</h3>
+          <p>Always the first to pop up and wave, Wisp handles your CLI welcomes and --help flags with ✨mild sarcasm✨.</p>
+        </div>
+        <div class="ghost">
+          <img src="assets/2.svg" alt="Byte" />
+          <h3>Byte – the innocent one 🧠</h3>
+          <p>Smol but deadly. Looks sweet but handles all your install commands like a savage. Says things like “Did you mean to break your system? Bold choice.”</p>
+        </div>
+        <div class="ghost">
+          <img src="assets/3.svg" alt="Drift" />
+          <h3>Drift – the sleepy background daemon 😴</h3>
+          <p>Drift runs updates quietly in the background and only wakes up to say “I fixed 9 broken packages. You’re welcome. Again.”</p>
+        </div>
+        <div class="ghost">
+          <img src="assets/4.svg" alt="Hex" />
+          <h3>Hex – the cursed debugger 😈</h3>
+          <p>Snarky as hell. Finds every dependency issue and roasts your typos: “You typed ‘pakcman’… again. That’s the 3rd time today. Need help?”</p>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="bios">
+      <h2>The Lore 📜</h2>
+      <ul>
+        <li><strong>Wisp:</strong> Formerly a haunted progress bar. Reincarnated after being stuck animating on a dead install script for 9 years. Still twitchy about it.</li>
+        <li><strong>Byte:</strong> Spawned from a cursed floppy disk found in an abandoned CompUSA. Has seen too much. Too pure for this world… unless provoked.</li>
+        <li><strong>Drift:</strong> Originated in a forgotten background process on Windows ME. Only speaks in update logs. Loves naps. Hates kernel panics.</li>
+        <li><strong>Hex:</strong> Born in the fires of a failed Gentoo compile. Whispers error codes in the dark. Probably knows your root password. Won’t tell you.</li>
+      </ul>
+    </section>
+
     <section id="contact">
-      <h2>💌 Contact Us</h2>
-      <p>Have questions or just wanna chat? Reach out to us!</p>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+
         <button type="submit">Send Message</button>
       </form>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>Built with 💜 by moxlyy | Spooky License applies 👻</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; 2025 pkgeist. All rights spooked.</p>
+  </footer>
+</body>
 </html>
