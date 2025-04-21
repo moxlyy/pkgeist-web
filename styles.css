@@ -1,0 +1,76 @@
+/* spooky styles only */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0d0d0d;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  main {
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    color: #b084ff;
+  }
+  
+  .tagline {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #aaa;
+  }
+  
+  .buttons a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #b084ff;
+    color: #b084ff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .buttons a:hover {
+    background: #b084ff;
+    color: black;
+  }
+  
+  ul {
+    text-align: left;
+    margin: 1rem auto;
+    padding-left: 1rem;
+    line-height: 1.7;
+  }
+  
+  .footer {
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  .ghost-lineup {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .ghost-lineup img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+  }
+  
+  .ghost-lineup img:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  
