@@ -7,44 +7,84 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <h1>👻 pkgeist</h1>
-      <p class="tagline">a spooky, smart, and silly package manager</p>
-
-      <section class="buttons">
-        <a href="https://github.com/yourusername/pkgeist" target="_blank">🔗 GitHub Repo</a>
-        <a href="#features">✨ Features</a>
-      </section>
-
-      <section id="features">
-        <h2>🌀 what is pkgeist?</h2>
-        <p>
-          pkgeist is like if <a href="https://brew.sh/">Homebrew</a> and 
-          <a href="https://wiki.archlinux.org/title/Pacman">Pacman</a> got possessed by a sarcastic AI ghost.
-        </p>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
         <ul>
-          <li>💀 beautiful CLI: <code>geist install spooky-package</code></li>
-          <li>🧠 AI-assisted search & resolution</li>
-          <li>🌐 user-made taps (ghost towns full of packages!)</li>
-          <li>🦀 Rust where it counts, Python where it's friendly</li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#ghosts">Ghost Crew</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
+      </nav>
+    </header>
 
-      <section id="ghosts">
-        <h2>🎃 meet the geist crew</h2>
-        <div class="ghost-lineup">
-          <img src="assets/1.svg" alt="ghost 1" />
-          <img src="assets/2.svg" alt="ghost 2" />
-          <img src="assets/3.svg" alt="ghost 3" />
-          <img src="assets/4.svg" alt="ghost 4" />
-        </div>
-      </section>
-      
-      
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Welcome to pkgeist 👻</h1>
+        <p class="tagline">A spooky, smart, and silly package manager</p>
+        <a href="#features" class="cta-button">Explore Features</a>
+      </div>
+      <div class="hero-ghosts">
+        <img src="assets/1.svg" alt="ghost 1" class="ghost">
+        <img src="assets/2.svg" alt="ghost 2" class="ghost">
+        <img src="assets/3.svg" alt="ghost 3" class="ghost">
+        <img src="assets/4.svg" alt="ghost 4" class="ghost">
+      </div>
+    </section>
 
-      <section class="footer">
-        <p>Built with 💜 by moxlyy | spooky license applies 👻</p>
-      </section>
-    </main>
+    <!-- Features Section -->
+    <section id="features">
+      <h2>🌀 What is pkgeist?</h2>
+      <p>pkgeist is like if <a href="https://brew.sh/">Homebrew</a> and 
+      <a href="https://wiki.archlinux.org/title/Pacman">Pacman</a> got possessed by a sarcastic AI ghost.</p>
+      <ul>
+        <li>💀 Beautiful CLI: <code>geist install spooky-package</code></li>
+        <li>🧠 AI-assisted search & resolution</li>
+        <li>🌐 User-made taps (ghost towns full of packages!)</li>
+        <li>🦀 Rust where it counts, Python where it's friendly</li>
+      </ul>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+      <h2>🎃 How pkgeist Works</h2>
+      <p>Discover how pkgeist makes package management fun and spooky!</p>
+      <ul>
+        <li>1. Use <code>geist tap</code> to add your ghost town</li>
+        <li>2. Search with <code>geist search</code> for that perfect package</li>
+        <li>3. Install with <code>geist install</code> and get spooky packages</li>
+      </ul>
+    </section>
+
+    <!-- Ghost Crew Section -->
+    <section id="ghosts">
+      <h2>👻 Meet the Geist Crew</h2>
+      <div class="ghost-lineup">
+        <img src="assets/1.svg" alt="ghost 1" />
+        <img src="assets/2.svg" alt="ghost 2" />
+        <img src="assets/3.svg" alt="ghost 3" />
+        <img src="assets/4.svg" alt="ghost 4" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>💌 Contact Us</h2>
+      <p>Have questions or just wanna chat? Reach out to us!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built with 💜 by moxlyy | Spooky License applies 👻</p>
+    </footer>
   </body>
 </html>
